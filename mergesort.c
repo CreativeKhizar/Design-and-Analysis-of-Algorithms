@@ -2,14 +2,13 @@
 
 void merge(int arr[],int l,int r)
 {
-	int arr1[20];
-	int arr2[20];
-	
 	int mid=(l+r)/2;
 	
 	int len1=mid-l+1;
 	
 	int len2=r-mid;
+	
+	int arr1[len1],arr2[len2];
 	
 	int i,j,k;
 	k=l;

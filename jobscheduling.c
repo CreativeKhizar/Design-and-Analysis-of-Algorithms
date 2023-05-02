@@ -57,8 +57,8 @@ int main()
 		scanf("%d",&profit[i]);
 	}
 	maxdl=findMax(dl,n);
-	int a[10];
-	setValues(a,maxdl);
+	int ts[10];
+	setValues(ts,maxdl);
 	for(i=n-1;i>0;i--)
 	{
 		for(j=0;j<i;j++)
@@ -77,19 +77,19 @@ int main()
 	} 
 	for(i=0;i<n;i++)
 	{
-		if(a[dl[i]-1]==0)
+		if(ts[dl[i]-1]==0)
 		{
-			a[dl[i]-1]=profit[i];
+			ts[dl[i]-1]=profit[i];
 		}
 		else
 		{
-			setProfit(a,dl[i]-1,profit[i]);
+			setProfit(ts,dl[i]-1,profit[i]);
 		}
 	}
 	
 	for(i=0;i<maxdl;i++)
 	{
-		p=p+a[i];
+		p=p+ts[i];
 	}
 	
 	printf("Maximum Profit is %d",p);

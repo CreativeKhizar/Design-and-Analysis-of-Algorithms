@@ -95,4 +95,23 @@ int main()
 	printf("Maximum Profit is %d",p);
 	return 0;
 }
-	
+
+/**
+Algorithm 
+
+Initialize an array "profit" to store the profits of each job and an array "dl" to store the deadlines of each job.
+
+Take input from the user for the total number of jobs and their respective deadlines and profits.
+
+Find the maximum deadline among all the jobs using the "findMax" function.
+
+Initialize an array "a" to store the job sequence and set all its values to 0 using the "setValues" function.
+
+Sort the jobs in descending order of their profits using the Bubble Sort algorithm.
+
+For each job, starting from the highest profit, check if there is an empty slot in the "a" array before its deadline. If yes, place the job in that slot, else try to place it in an earlier slot.
+
+Compute the total profit of the selected jobs.
+
+Print the maximum profit.
+**/

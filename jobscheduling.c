@@ -105,11 +105,11 @@ Take input from the user for the total number of jobs and their respective deadl
 
 Find the maximum deadline among all the jobs using the "findMax" function.
 
-Initialize an array "a" to store the job sequence and set all its values to 0 using the "setValues" function.
+Initialize an array "ts" to store the job sequence and set all its values to 0 using the "setValues" function.
 
 Sort the jobs in descending order of their profits using the Bubble Sort algorithm.
 
-For each job, starting from the highest profit, check if there is an empty slot in the "a" array before its deadline. If yes, place the job in that slot, else try to place it in an earlier slot.
+For each job, starting from the highest profit, check if there is an empty slot in the "ts" array before its deadline. If yes, place the job in that slot, else try to place it in an earlier slot.
 
 Compute the total profit of the selected jobs.
 
